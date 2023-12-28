@@ -1,0 +1,860 @@
+ 
+* {
+
+box-sizing: border-box;
+margin: 0;
+
+}
+@font-face {
+    font-family: Avenir;
+    src: url(./AvenirLTStd-Roman.otf);
+  }
+
+ 
+ 
+body {
+    background-color:#f6f6ef ;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+body> img {
+    
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 50%;
+}
+.container {
+    padding: 100px 100px 0;
+}
+
+#nav-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    color: #000000de;
+    line-height: 1.4285em;
+}
+
+#nav-title h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+
+#nav-title> img {
+    height: 60px;
+    width: 60px;
+    
+}
+#nav-text {
+    margin-bottom: 27px;
+}
+#nav-text p {
+    color: #1a1a1a;
+    font-size: 40px;
+    line-height: 3.7rem;
+    width: 55%;
+    margin-bottom: 27px;
+}
+#nav-text2 {
+width: 50%;
+margin-bottom: 50px;
+}
+#nav-text2 p{
+ color: #716f6f;
+ font-size: 24px;
+}
+#nav-text2 span{
+    color: #fb651e;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.btn {
+    align-items: center;
+    width: 50%;
+    margin-bottom: 70px;
+}
+.btn :first-child{
+    background-color: #fb651e;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+  .btn :first-child:hover , .btn-1 button:hover{
+    background-color: #ff9650;
+  }
+
+  .btn :last-child{
+    border: none;
+    color:  #fb651e;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: inherit;
+    text-decoration:underline;
+    margin-left: 15px;
+    background-color: f6f6ef;
+  }
+  .btn :last-child:hover {
+    color:  #ff9650;
+  }
+  #nav-text3 {
+    margin-bottom: 50px ;
+  }
+  #nav-text3 p{
+    color: #1a1a1a;
+    font-size: 24px;
+    font-family: inherit;
+    line-height: 150%;
+   }
+
+   .black-bg {
+     background-color: #292519;
+     color: #fff;
+    
+   }
+   
+   
+   .container-sec {
+    margin: 0 100px;
+    padding: 50px 0 ;
+   }
+   .container-sec h2 {
+    color: #ff9650;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 150%;
+   }
+    li{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 14px;
+   }
+   li:last-child {
+    margin-bottom: 35px;
+   }
+  #image-title {
+    font-size: 34px;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 50px;
+  } 
+  #image-title ~ p{
+  color:#716f6f ;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 70px;
+  }
+  .image-list {
+    width: 300px;
+    height: 320px;
+    box-shadow: 1px 1px 8px #ccc6c6;
+    margin: 25px 25px ;
+    border-radius: 4px;
+    background-color: white;
+  } 
+
+  .image-title {
+    line-height: 200%;
+    padding: 15px 30px;
+    color:#1a1a1a ;
+  }
+  .image-title > h3 {
+    font-size: 16px;
+    
+  }
+  .image-title > p {
+    font-size: 14px;
+  }
+  .image-list >img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 4px 4px 0 0;
+    
+  }
+  .team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .svg{
+    width: 30px;
+    height: auto;
+    color: #716f6f;
+    margin-left: 35px;
+  }
+  .flex div:first-child, .flex div:last-child{
+    min-width: 100px ;
+    
+  }
+    
+
+  .alumni {
+    max-width: 230px;
+    max-height: 230px;
+    height: auto;
+    box-shadow: 1px 1px 8px #ccc6c6;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 120px;
+  }
+  .flex div > h3 {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500%;
+    line-height: 150%;
+    margin-bottom: 30px;
+    padding: 0 45px;
+    
+
+  }
+   .flex div > p {
+    font-family: inherit;
+    font-size: 18px;
+    color:  #716f6f;
+    line-height: 200%;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    
+   }
+   .flex div > p:last-child {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+   }
+
+   .how-title {
+    font-size: 36px;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   }
+   
+   .how {
+    max-width: 30%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    font-family: inherit;
+    border-radius: 4px;
+   }
+   .how div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 15px 15px;
+    
+   }
+   .how > p {
+    padding: 15px;
+    font-family:inherit ;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+
+   }
+   .how div > p {
+    font-size: 16px;
+    font-weight: 600;
+   }
+   
+   hr {
+    border-top: 2px solid #ff9650;
+   }
+   .material-icons {
+    color:#ff9650 ;
+   }
+   .icon-1 {
+    color: black;
+    padding-left: 5px;
+
+   }
+   .icon-2 {
+    opacity: 0;
+   }
+   .how-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+   }
+   
+   a {
+    color:#ff9650 ;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+   }
+    h4 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center; 
+        padding-top: 100px;
+        letter-spacing: .5px;
+
+    }
+
+   .btn-1 button{
+    background-color: #fb651e;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    font-family: inherit;
+    display: block;
+    margin: 50px auto 40px;
+    
+   }
+   .black-bg > div > div>img {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+   }
+   .black-bg > div > p {
+    font-size: 22px;
+
+   }
+   .black-bg  div div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+   }
+ .footer {
+    text-decoration: none;
+    color: #f6f6ef;
+    font-size: 14px;
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+    margin-left: 30px;
+    
+    }
+
+    .footer-box {
+        padding: 110px 100px;
+        display: flex;
+        gap: 15px;
+        justify-content: left;
+        align-items: center;
+    }
+    #sign-up-now {
+       
+        border-radius: 6px;
+        border: 1px solid white;
+        color: white;
+        padding: 15px 35px;
+        background-color: black;
+        font-size: 12px;
+
+    }
+    #sign-up-now:hover {
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+    .footer-co {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+    }
+
+
+@media only screen and (max-width: 960px) {
+    
+        
+        .container {
+            padding: 80px 80px 0;
+        }
+        
+        #nav-title {
+            line-height: 150%;
+        }
+        
+        #nav-title h1 {
+            font-size: 36px;
+            margin: 16px;
+        }
+        
+        #nav-title> img {
+            height: 40px;
+            width: 40px;
+            
+        }
+        #nav-text {
+            margin-bottom: 18px;
+        }
+        #nav-text p {
+            font-size: 36px;
+            line-height: 3.7rem;
+            margin-bottom: 18px;
+        }
+        #nav-text2 {
+        width: 75%;
+        margin-bottom: 35px;
+        }
+        #nav-text2 p{
+         font-size: 20px;
+        }
+        #nav-text2 span{
+            font-size: 20px;
+            
+        }
+        .btn {
+            margin-bottom: 50px;
+        }
+        .btn :first-child{
+            color: white;
+            padding: 15px 50px;
+            font-size: 16px;
+          }
+        
+          .btn :last-child{
+            font-size: 16px;
+          }
+        
+          
+          #nav-text3 {
+            margin-bottom: 50px ;
+          }
+          #nav-text3 p{
+            color: #1a1a1a;
+            font-size: 24px;
+            font-family: inherit;
+            line-height: 150%;
+           }
+           
+        .container-sec {
+            margin: 0 80px;
+            padding: 30px 0 ;
+           }
+        .container-sec h2 {
+
+            font-size: 30px;
+           }
+       
+        li:last-child {
+            margin-bottom: 20px;
+           }
+          #image-title {
+            font-size: 30px;
+            margin-top: 30px;
+          } 
+          #image-title ~ p{
+          font-size: 20px;
+          }
+          .image-list {
+            max-width: 300px;
+            height: auto;
+            margin: 20px 20px ;
+          } 
+        
+          .image-title {
+            line-height: 200%;
+            padding: 15px 30px;
+            color:#1a1a1a ;
+          }
+          .image-title > h3 {
+            font-size: 14px;
+            
+          }
+          .image-title > p {
+            font-size: 12px;
+          }
+          
+          .team {
+            flex-wrap: wrap;
+            
+          }
+          .svg{
+            width: 25px;
+            margin-left: 27px;
+          }
+          .flex div:first-child, .flex div:last-child{
+            min-width: 80px ;
+            
+          }
+            
+        
+          .alumni {
+            max-width: 190px;
+            max-height: 190px;
+            
+          }
+          .flex {
+            gap: 5px;
+            padding-top: 30px;
+            margin-bottom: 60px;
+          }
+          .flex div > h3 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+            
+        
+          }
+           .flex div > p {
+            font-size: 14px;
+            line-height: 200%;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            
+           }
+           .flex div > p:last-child {
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+           }
+        
+           .how-title {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+           }
+           
+           .how {
+            max-width: 30%;
+            background-color: white;
+            padding: 5px;
+            justify-content: left;
+            margin-bottom: 10px;
+            
+           }
+           .how div {
+            gap: 10px;
+            align-items: center;
+           }
+
+           .how > p {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 200;
+            
+           }
+           .how div > p {
+            font-size: 14px;
+           }
+           .material-icons + p {
+            font-size: 10px;
+            font-weight: normal;
+           }
+           .material-icons {
+            font-size: 20px;
+           }
+           
+           .how-flex {
+            justify-content: center;
+            align-items: stretch;
+           }
+           .icon-1{
+            padding-top:70px;
+           }
+
+           a {
+            font-size: 18px;
+            
+           }
+            h4 {
+                font-size: 28px;
+                padding-top: 80px;
+                letter-spacing: .5px;
+        
+            }
+        
+           .btn-1 button{
+            padding: 15px 40px;
+            font-size: 14px;
+            margin: 40px auto 30px;
+            
+           }
+           .black-bg > div > div>img {
+            background-color: white;
+            width: 25px;
+            height: 25px;
+           }
+           .black-bg > div > p {
+            font-size: 20px;
+        
+           }
+           
+         .footer {
+            font-size: 12px;
+            margin-left: 20px;
+            
+            }
+        
+            .footer-box {
+                padding: 80px 80px;
+                display: flex;
+                gap: 10px;
+            }
+            #sign-up-now {
+                padding: 15px 25px;
+                font-size: 10px;
+        
+            }
+            .footer-co {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+        
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    body> img {
+        display: none;
+    }
+
+
+    .container {
+        padding: 30px 30px 0;
+    }
+
+     #nav-title {
+        margin-bottom: 20px;
+        
+     }
+
+    #nav-title h1 {
+        font-size: 20px;
+        font-weight: 700;
+       
+    }
+    #nav-title> img {
+        height: 28px;
+        width: 28px;
+        
+    }
+    #nav-text p {
+        
+        font-size: 22px;
+        width: 100%;
+        line-height: 150%;
+      
+    }
+    #nav-text{
+        margin-bottom: -12px;
+    }
+    #nav-text2 {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+     #nav-text2 p{
+         
+         font-size: 14px;
+    }
+     #nav-text2 span{
+         font-size: 14px;
+         line-height: 1.5;
+    }
+    .btn {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .btn :first-child{
+       display: block; 
+       width: 100%;
+       font-size: 12px;
+       padding:10px 22px;
+       margin-bottom: 10px;
+        
+       
+      }
+      .btn :last-child{
+        font-size: 12px;
+        margin: 0 auto;
+        display: block;
+        
+      }
+      
+       #nav-text3 p{
+        color: #716f6f;
+        font-size: 12px;
+       }
+       .container-sec {
+        margin: 0 20px;
+        padding: 20px 0 ;
+       }
+       .container-sec h2 {
+        font-weight: 100;
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+       }
+        li{
+        font-size: 16px;
+        margin-bottom: 14px;
+        font-weight: 100;
+       }
+       li:last-child {
+        margin-bottom: 15px;
+       }
+       #image-title {
+        font-size: 24px;
+        margin-top: 30px;
+      } 
+      #image-title ~ p{
+      font-size: 14px;
+      margin-bottom: 30px;
+      }
+      .image-list {
+        max-width: 300px;
+        height: auto;
+        margin: 10px 10px ;
+      } 
+    
+      .image-title {
+        line-height: 200%;
+        padding: 15px 30px;
+        color:#1a1a1a ;
+      }
+      .image-title > h3 {
+        font-size: 12px;
+        
+      }
+      .image-title > p {
+        font-size: 10px;
+      }
+      .none {
+        display: none;
+      }
+
+      .how-title {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+       }
+       
+       .how {
+        max-width: 100%;
+        height: auto;
+        
+        
+       }
+       .how div {
+        gap: 5px;
+        
+        
+       }
+       .how > p {
+        padding: 5px;
+        font-size: 10px;
+        
+    
+       }
+
+       .material-icons + p {
+        font-size: 10px;
+        font-weight: bold;
+       }
+
+       hr {
+        border-top: 1px solid #ff9650;
+       }
+       .material-icons {
+        
+       font-size: 16px;
+       }
+       .icon-1 {
+        opacity: 0;
+        padding-top:0px;
+           
+       }
+       .icon-2 {
+        color: black;
+        padding-left: 2px;
+        opacity: 1;
+        padding-right: 15px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+       }
+       .how-flex {
+        padding-top: 5px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+       }
+
+
+       a {
+        font-size: 10px;
+        text-align: center;
+        
+       }
+        h4 {
+            font-size: 20px;
+            font-weight: normal;
+            padding-top: 40px;
+    
+        }
+    
+       .btn-1 button{
+        padding: 10px 50px;
+        cursor: pointer;
+        font-size: 12px;
+        width:100% ;
+        
+       }
+       .black-bg > div > div>img {
+        background-color: white;
+        width: 15px;
+        height: 15px;
+       }
+       .black-bg > div > p {
+        font-size: 18px;
+    
+       }
+       .footer-box {
+        margin: 0px;
+        padding: 10px 0;
+       }
+    
+       
+      
+    
+   
+
+}
